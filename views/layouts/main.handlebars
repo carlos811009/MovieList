@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+</head>
+
+<body>
+  <!-- partial templates will replace the part of "body" here -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Movie List</a>
+    </div>
+  </nav>
+
+  {{{ body }}}
+
+  {{!-- 這邊因為注意是從javascripts開始的目錄位址 --}}
+  {{!-- 因為在app.js 裡面是指向public裡面的資料 --}}
+  <script src="/javascripts/jquery-3.6.0.js"></script>
+  <script src="/javascripts/popper.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+</body>
+
+</html>

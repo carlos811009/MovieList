@@ -5,7 +5,7 @@ const exphbs = require('express-handlebars')
 const movieList = require('./movieList.json')
 
 //定義一個引擎 設定要使用哪種引擎(handlebars)並且設定預設值預設檔案main
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
+app.engine('handlebars', exphbs({ defaultLayout: 'app' }))
 
 //定義引擎之後，要設定這個引擎是什麼引擎，是view engine 並且種類是handlebars
 app.set('view engine', 'handlebars')
